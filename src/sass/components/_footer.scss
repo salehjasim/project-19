@@ -248,6 +248,7 @@
     font-size: 26px;
   }
   @media screen and (min-width: $desktop) {
+    width: 60%;
     font-weight: 400;
     font-size: 37px;
   }
@@ -273,6 +274,8 @@
   @media screen and (min-width: $desktop) {
     margin-top: 14px;
     font-size: 58px;
+    padding-bottom: 0;
+    margin-bottom: -49px;
   }
   }
 .footer-contacts {
@@ -280,6 +283,9 @@
   @media screen and (min-width: $tablet) {
     width: 50%;
     padding-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 0;
   }
 }
 .footer-contacts__social {
@@ -289,6 +295,10 @@
   margin-bottom: 20px;
   @media screen and (min-width: $tablet) {
     margin-top: 68px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 18px;
+    margin-bottom: 40px;
   }
 }
 .footer__social-links {
