@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+a {
+  color: $black;
+  text-decoration: none;
+  &:hover {
+    color: $hoverColor;
+  }
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  // @media screen and (min-width: 768px) {
+  //   width: 768px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   width: 1200px;
+  // }
+}

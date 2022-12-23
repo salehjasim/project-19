@@ -1,0 +1,220 @@
+.footer {
+  background-color: $primaryColor;
+}
+// .footer-container {
+// display: flex;
+// flex-direction: column;
+// align-items: center;
+// }
+.location-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.location-list__item {
+  background-color: $white;
+  padding: 40px 32px 24px 32px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    margin-bottom: 16px;
+  }
+  &:nth-child(3) {
+    margin-bottom: 20px;
+  }
+}
+.location-list__heading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  padding: 4px 22px;
+  background-color: $secondaryYellow;
+  color: $black;
+  display: inline;
+  border-radius: 4px;
+}
+.location-list__city {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: $black;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+.location-list__geo {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 183%;
+  letter-spacing: 0.04em;
+  position: relative;
+  border-bottom: 1px solid #E1E1E1;
+  padding-bottom: 24px;
+  color: $coffeeColor;
+
+}
+.location-list__schedule {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E1E1E1;
+}
+.location-list__schedule--black {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: $black;
+}
+.location-list__schedule--grey {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #ABABAB;
+}
+.location-list__contacts {
+  padding-top: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 160%;
+  color: $black;
+}
+.location-modal-btn {
+  color: $black;
+  display: block;
+  margin: 0px auto; 
+  padding: 12px 56px 12px 40px;
+  background-color: $secondaryYellow;
+  border: none;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  position: relative;
+  &:hover {
+    background-color: $hoverColor;
+    transition: all cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  &:focus {
+    background-color: $hoverColor;
+    color: $white;
+    outline: none;
+    transition: all cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+}
+.franchise-modal-btn {
+  color: $black;
+  display: block;
+  margin: 16px auto;
+  padding: 12px 70px 12px 56px;
+  border: 2px solid $secondaryYellow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  background-color: $primaryColor;
+  border-radius: 10px;
+  position: relative;
+  &:hover {
+    border: 2px solid $hoverColor;
+    transition: all cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  &:focus {
+    border: 2px solid $hoverColor;
+    transition: all cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    color: $white;
+    outline: none;
+  }
+}
+.arrow-icon {
+  width: 5px;
+  height: 10px;
+  margin-left: 7px;
+  top: 16px;
+  position: absolute;
+}
+.footer__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(22/18);
+  text-transform: uppercase;
+  color: $white;
+}
+.footer__heading-span {
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height:calc(41/34);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 60px;
+  }
+.footer-contacts {
+  padding-bottom: 40px;
+}
+.footer-contacts__social {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.footer__social-links {
+  border: 7px solid $secondaryYellow;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover .footer__social-icons,
+  &:focus .footer__social-icons {
+    fill: $white;
+    transition: all cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+}
+.footer__social-icons {
+  width: 20px;
+  height: 20px;
+  fill: $primaryColor;
+  background-color: $secondaryYellow;
+}
+.footer-contacts__paragraph {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: end;
+  color: $black;
+}
+.footer-contacts__link {
+ color: $white;
+}
+
+.footer-rights {
+  padding-top: 20px;
+  border-top: 1px solid #E1E1E1;
+  width: 100vw;
+  text-align: center;
+  padding-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  color: #7A7A7A;
+}
