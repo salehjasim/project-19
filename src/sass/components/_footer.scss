@@ -171,13 +171,13 @@
   line-height: 129%;
   position: relative;
   &:hover {
-    background-color: $hoverColor;
+    background-color: $hoverGreen;
     transition: $transition;
     opacity: 0.9;
     cursor: pointer;
   }
   &:focus {
-    background-color: $hoverColor;
+    background-color: $hoverGreen;
     color: $white;
     outline: none;
     transition: $transition;
@@ -202,13 +202,13 @@
   border-radius: 10px;
   position: relative;
   &:hover {
-    border: 2px solid $hoverColor;
+    border: 2px solid $hoverGreen;
     transition: $transition;
     opacity: 0.9;
     cursor: pointer;
   }
   &:focus {
-    border: 2px solid $hoverColor;
+    border: 2px solid $hoverGreen;
     transition: $transition;
     color: $white;
     outline: none;

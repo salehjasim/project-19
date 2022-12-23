@@ -6,12 +6,9 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 a {
-  color: $black;
   text-decoration: none;
-  &:hover {
-    color: $hoverColor;
   }
-}
+
 ul {
   list-style: none;
 }
