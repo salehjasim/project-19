@@ -5,8 +5,12 @@ $secondaryYellow: #F8D24E;
 $white: #FCFCFC;
 $black: #131313;
 $coffeeColor: #D6936D;
+$hoverColor: #0A8817;
 
 // ТОЧКИ ПЕРЕЛОМУ 
 $mobile: 480px;
 $tablet: 768px;
 $desktop: 1200px;
+
+// АНІМЦІІ ХОВЕРУ
+$transition: all cubic-bezier(0.4, 0, 0.2, 1) 250ms;
