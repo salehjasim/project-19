@@ -14,14 +14,12 @@
 .location-modal {
   position: absolute;
   top: calc(50% - 280px);
-  left: calc(50% - 140px);
+  left: calc(50% - 146px);
   position: relative;
   padding: 28px;
   background-color: $white;
   border: solid 2px $secondaryYellow;
   border-radius: 10px;
-  // display: flex;
-  flex-direction: column;
   height: 365px;
   width: 280px;
 }
