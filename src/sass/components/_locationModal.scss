@@ -8,13 +8,11 @@
   background-color: rgba(0, 0, 0, 0.2);
   width: 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
 }
 .location-modal {
   position: absolute;
-  top: calc(50% - 280px);
-  left: calc(50% - 146px);
+  top: calc(50% - 160px);
+  left: calc(50% - 140px);
   position: relative;
   padding: 28px;
   background-color: $white;
@@ -37,7 +35,7 @@
   top: 12px;
   &:hover,
   &:focus {
-    transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: $transition;
     opacity: 0.9;
     cursor: pointer;
   }
@@ -57,7 +55,7 @@
 }
 .location__iframe {
   margin: 0 auto;
-  width: 280px;
+  width: 222px;
   border-radius: 10px;
   margin-bottom: 24px;
 
