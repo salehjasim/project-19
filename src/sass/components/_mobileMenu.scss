@@ -52,6 +52,9 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 120%;
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+  }
 
 }
 .mobile-menu__item--noMargin {
@@ -59,12 +62,14 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 120%;
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+  }
 }
 .mobile-menu__link {
   color: $white;
 }
 .buynow-menu {
-  margin-top: 100px;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -74,6 +79,10 @@
   border-radius: 10px;
   border: none;
   position: relative;
+  margin: 100px auto;
+  @media screen and (min-width: $tablet) { 
+    display: none;
+  }
 }
 .menu {
   display: flex;
