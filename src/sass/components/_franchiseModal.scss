@@ -10,6 +10,8 @@
   height: 100vh;
 }
 .franchise-modal {
+  height: 95%;
+  overflow-y: auto;
   position: absolute;
   top: 10px;
   left: 0px;
