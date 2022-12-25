@@ -1,64 +1,104 @@
 .header {
-    background-color:$primaryColor;
+  background-color: $primaryColor;
+  position: relative;
 }
 
 .header__logo {
-    width: 40px;
-    height: 37px;
+ width: 40px;
+ height: 37px;
+ @media screen and (min-width: $tablet) {
+  height: 48px;
+  width: 44px;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 65px;
+    width: 60px;
+  }
 }
 
 .header-container {
-    margin-bottom: 1000px;
-    
+ padding: 12px 20px;
+ margin-bottom: 1000px;
+ display: flex;
+ justify-content: space-between;
+  @media screen and (min-width: $tablet) {
+  padding: 20px 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 8px 16px;
+  }
 }
 
 .nav-container {
-    display: flex;
-    @media screen and (max-width: calc($desktop - 1px)) {
-        display: none;
-    }
-        
-    
-
-
+ display: flex;
+ @media screen and (max-width: calc($desktop - 1px)) {
+    display: none;
+ }
+     
 }
-
-
 .nav-list {
-
+  display: flex;
+  gap: 28px;
+  padding-top: 32px;
+  margin-right: 200px;
+  margin-left: 300px;
 }
 
 .nav-list__link {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 125%;
-    color: $white;
-    &:hover {
-        color:$secondaryYellow
-    }
+ font-style: normal;
+ font-weight: 700;
+ font-size: 16px;
+ line-height: 125%;
+ color: $white;
+ &:hover {
+   color:$secondaryYellow
+ }
 }
 
-
-
-
-.buynow {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 121%;
-    padding: 12px 51px 12px 36px;
-    background-color: $secondaryYellow;
-    border-radius: 10px;
+.header-container .menu-toggle {
+  @media screen and (max-width: calc($desktop - 1px)) {
+    width: 32px;
+    height: 32px;
     border: none;
-    position: relative;
-    @media screen and (max-width: calc($tablet - 1px)) {
-        display: none;
+    background-color: $primaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      cursor: pointer;
     }
-        
-    
+    margin-top: 10px;
+ }
+
 }
-
-.arrow-icon {
-
+.nav-buttons {
+  display: flex;
+}
+.burger {
+  width: 32px;
+  height: 32px;
+  fill: $white;
+}
+.buynow {
+ font-style: normal;
+ font-weight: 600;
+ font-size: 14px;
+ line-height: 121%;
+ padding: 12px 51px 12px 36px;
+ background-color: $secondaryYellow;
+ border-radius: 10px;
+ border: none;
+ position: relative;
+ @media screen and (max-width: calc($tablet - 1px)) {
+    display: none;
+ }
+ @media screen and (min-width: $tablet) {
+  margin-left: 36px;
+  margin-top: 4px;
+ }
+ @media screen and (min-width: $desktop) {
+  margin-left: 36px;
+  margin-top: 20px;
+ }
+ 
 }
