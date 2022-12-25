@@ -1,0 +1,221 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .modal {
+    box-sizing: border-box;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    min-height: 581px;
+    left: 50%;
+    top: 50%;
+    padding: 40px;
+    background: $title-first-color;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close {
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    left: 490px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    background: $title-first-color;
+    cursor: pointer;
+  }
+  .close{
+    &:hover,&:focus{
+    fill: $accent-color;
+    background-color: $title-first-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+  }
+  .close:hover svg {
+    fill: $accent-color;
+  }
+  .modal-close-svg:hover {
+    fill: currentColor;
+  }
+  
+  .modal-form {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: $title-second-color;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+  }
+  .form-terms {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $title-second-color;
+  }
+  .contract {
+    color: rgba(33, 150, 243, 1);
+    text-decoration: underline;
+  }
+  .svg-agree {
+    margin-right: 8.38px;
+  }
+  .form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .form-contract {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .data {
+    margin-bottom: 12px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .form :not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .area {
+    box-sizing: border-box;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    outline-style: none;
+  }
+  .area ::placeholder {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+  }
+  .area:focus {
+    border: 1px solid $accent-color;
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .form-imput {
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 42px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline-style: none;
+    cursor: pointer;
+  }
+  .form-label {
+    padding-bottom: 4px;
+  }
+  .icon-name {
+    position: absolute;
+    top: 55%;
+    left: 15px;
+    fill: $pre-title-case;
+  }
+  .icon-telefon {
+    position: absolute;
+    top: 55%;
+    left: 14.27px;
+    fill: $pre-title-case;
+  }
+  .icon-mail {
+    position: absolute;
+    top: 55%;
+    left: 13.5px;
+    fill: $pre-title-case;
+  }
+  
+  textarea {
+    resize: none;
+    width: 448px;
+    height: 120px;
+    left: 576px;
+    top: 518px;
+  }
+  .form-imput:focus + .icon-form {
+    fill:$accent-color;
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .form-imput:focus {
+    border: 1px solid $accent-color;
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .checkbox-form {
+    display: flex;
+    align-items: center;
+  }
+  .form-contract {
+    display: inline-block;
+  }
+  .icon-wrapper {
+    width: 16px;
+    height: 15px;
+    border: 2px solid $pre-title-case;
+    border-radius: 2px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-contract .agree-icon {
+    fill: transparent;
+  }
+  .form-contract input:checked + .checkbox-form .agree-icon {
+    fill: $title-first-color;
+  }
+  
+  .form-contract input:checked + .checkbox-form .icon-wrapper {
+    background-color: $accent-color;
+    border: none;
+  }
+  
+  .submit-button {
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 713px;
+    color: $title-first-color;
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .submit-button:hover {
+    color: #fff;
+  }
