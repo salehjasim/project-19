@@ -1,0 +1,69 @@
+.review {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  //   padding-top: 178px;
+  padding-bottom: 393px;
+  /*phone*/
+  background-image: url(../images/customer/img3-mobile@1x.webp);
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/customer/img3-mobile@2x.webp);
+  }
+  /*Tablet*/
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/customer/img3-tablet@1x.webp);
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customer/img3-tablet@2x.webp);
+    }
+  }
+  /*desktop*/
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/customer/img3-desk@1x.webp);
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customer/img3-desk@2x.webp);
+    }
+  }
+}
+.review__image {
+  display: block;
+  transform: translateY(-32px);
+}
+.swiper {
+  margin-top: 80px;
+}
+.swiper__img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-image: url('../images/customer/img1-desk@2x.webp');
+  background-position: center;
+  margin: 0 auto;
+}
+.swiper__comment {
+  padding: 35px 39px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 255%;
+  background-color: $primaryColor;
+  border-radius: 10px;
+  color: $white;
+  margin-bottom: 32px;
+}
+.review__name {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+}
+.swiper-pagination {
+  bottom: 0;
+}
+.swiper-pagination .review__pagination {
+  margin-top: 12px;
+}
