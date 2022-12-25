@@ -11,16 +11,16 @@
       <form class="form">
         <div class="form-group" role="group" aria-labelledby="details" >
           <label class="form__item">
-            <input type="name" name="name" class="form__item-input" placeholder="Name">
+            <input type="name" name="name" class="form__item-input" placeholder="Name" pattern="\w{0,16}">
           </label>
           <label class="form__item">
-            <input type="tel" name="tel" class="form__item-input" placeholder="Phone">
+            <input type="tel" name="tel" class="form__item-input" placeholder="Phone" pattern="\d{9,15}">
           </label>
           <label class="form__item">
             <input type="email" name="email" class="form__item-input" placeholder="Email">
           </label>
           <label class="form__item">
-            <textarea name="comment" class="form__item-textarea" rows="10" placeholder="Comment"></textarea>
+            <textarea name="comment" class="form__item-textarea" rows="10" placeholder="Comment" pattern="\d{0,300}"></textarea>
           </label>
         </div>
         <button type="submit" class="form__submit">Відправити</button>
