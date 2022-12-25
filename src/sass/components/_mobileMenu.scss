@@ -31,7 +31,14 @@
   border: none;
   border-radius: 50%;
   outline: none;
+  &:hover .burger,
+  &:focus .burger {
+    fill: $secondaryYellow;
+    transition: $transition;
+  } 
+
 }
+
 .close-mobile {
     fill: $white;
     width: 20px;
@@ -40,6 +47,10 @@
 .menu-header__logo { 
   width: 40px;
   height: 37px;
+  @media screen and (min-width: $tablet) {
+    height: 48px;
+    width: 44px;
+  }
 
 }
 .mobile-menu {
@@ -68,6 +79,10 @@
 }
 .mobile-menu__link {
   color: $white;
+  &:hover {
+    color: $black;
+    transition: $transition;
+  }
 }
 .buynow-menu {
   font-style: normal;
@@ -108,10 +123,7 @@
   }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
+
 
 
 .menu-container.is-open {
@@ -122,5 +134,11 @@
   position: absolute;
   top: 16px;
   right: 20px;
+  
+  &:hover .close-mobile,
+  &:focus .close-mobile {
+    fill: $secondaryYellow;
+    transition: $transition;
+  }
 }
 

@@ -3,22 +3,21 @@
 @import './vars';
 @import './base';
 
+@import '../../node_modules/swiper/swiper-bundle.min.css';
+@import './components/header'; //  РОБИТЬ  salehjasim(Team Lead)
+@import './components/mobileMenu'; //  РОБИТЬ  salehjasim(Team Lead)
+@import './components/buyNowModal'; //  РОБИТЬ  nuridze
 
-@import './components/header';             //  РОБИТЬ  salehjasim(Team Lead)
-@import './components/mobileMenu';         //  РОБИТЬ  salehjasim(Team Lead)
-@import './components/buyNowModal';        //  РОБИТЬ  nuridze
-  
-@import './components/hero';               //  РОБИТЬ  kkalin
+@import './components/hero'; //  РОБИТЬ  kkalin
 
-@import './components/products';           //  РОБИТЬ  Nataliia-Demchenko
-@import './components/productsModal';      //  РОБИТЬ  NewCreator22
+@import './components/products'; //  РОБИТЬ  Nataliia-Demchenko
+@import './components/productsModal'; //  РОБИТЬ  NewCreator22
 
-@import './components/about';              //  РОБИТЬ  Tauaha  
-@import './components/readMoreModal';      //  РОБИТЬ  SerheyPopov
+@import './components/about'; //  РОБИТЬ  Tauaha
+@import './components/readMoreModal'; //  РОБИТЬ  SerheyPopov
 
+@import './components/customerReviews'; //  РОБИТЬ  Gwinblade740
 
-@import './components/customerReviews';    //  РОБИТЬ  Gwinblade740
-
-@import './components/footer';             //  РОБИТЬ  TONYGUDIMA
-@import './components/locationModal';      //  РОБИТЬ  TONYGUDIMA
-@import './components/franchiseModal';     //  РОБИТЬ  TONYGUDIMA
+@import './components/footer'; //  РОБИТЬ  TONYGUDIMA
+@import './components/locationModal'; //  РОБИТЬ  TONYGUDIMA
+@import './components/franchiseModal'; //  РОБИТЬ  TONYGUDIMA
