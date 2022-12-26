@@ -1,4 +1,4 @@
-.about .container{
+.about {
     background: $primaryColor;
     @media screen and(min-width: $tablet) {
         position: relative;
@@ -52,7 +52,7 @@ color: $white;
         width: 330px;
         position: absolute;
         top: 214; 
-        margin-right: 38px;   
+          
     }
     @media screen and(min-width:$desktop) {
 
@@ -62,12 +62,12 @@ color: $white;
 }
 .thumb{
     @media screen and(min-width: $tablet) {
-      margin-left: 368px;
+      margin-left: 391px;
          
     }
     @media screen and(min-width:$desktop) {
         margin-left: 584px;
-        margin-right: 89px;
+        margin-right: 105px;
     }
 
 }
@@ -79,14 +79,19 @@ line-height: 2.1;
 text-align: center;
 letter-spacing: 0.04em;
 color: $white;
+
 @media screen and(min-width: $tablet) {
    margin: 0;
+   margin-bottom: 8px;
+   line-height: 1.7;
    text-align: left;
 }
 @media screen and(min-width: $desktop) {
-    font-size: 14px;
+    font-size: 16px;
  }
 }
+
+
 .text-hidden{
     display: none;
     @media screen and(min-width: $tablet) {
@@ -98,7 +103,7 @@ color: $white;
 
 .about-button{
     display: block;
-    margin: 22px auto 0 auto;
+    margin: 0 auto 0 auto;
     padding: 12px 35px 12px 34px;
     background-color: $secondaryYellow;
     border: none;
@@ -122,11 +127,11 @@ color: $white;
         opacity: 0.9;
         cursor: pointer; } 
         @media screen and(min-width: $tablet) {
-            margin: 32px 0 80px 0;
+            margin: 24px 0 80px 0;
                
           }
           @media screen and(min-width: $desktop) {
-            margin: 54px 0 146px 0;
+            margin: 46px 0 146px 0;
                
           }
 }
