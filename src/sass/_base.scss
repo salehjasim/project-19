@@ -24,7 +24,7 @@ ul {
     padding-right: 32px;
   }
   @media screen and (min-width: $desktop) {
-    width: $desktop;
+    min-width: $desktop;
     padding-left: 16px;
     padding-right: 16px;
   }
