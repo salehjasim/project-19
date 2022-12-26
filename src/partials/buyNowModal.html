@@ -1,46 +1,43 @@
-
-      
-            <div class="modal" buyNow-modal>
-            
-        <button buyNow-modal-close class="close buyNow-is-hidden"> <svg class="close-mo" width="13.3" height="13.3" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" >
-            <use xlink:href="#close-mobile"></use>
+<div class="buyNow-backdrop buyNow-is-hidden" buyNow-modal>
+    <div class="buyNow-modal">
+      <button class="close-btn" buyNow-modal-close> 
+        <svg class="close-icon">
+          <use xlink:href="#close-icon"></use>
+        </svg>
+      </button>
+      <h2 class="buyNow__heading">Buy now</h2>
+      <ul class="buyNow-products">
+        <li class="ice-cream">
+          <svg  width="132" height="133" > 
+            <use xlink:href="#icon-victor"></use></svg>
+          <p class="buyNow-products__text">ice cream</p> 
+        </li>
+        <li class="ice-cream">
+          <svg  width="132" height="133" > 
+            <use xlink:href="#icon-victor"></use>
           </svg>
-        </button>
-
-        <h2 class="data">Buy now</h2>
-        <ul class="modal-product">
-        <li class="ice-cream">
-            <svg  width="132" height="133" > 
-                <use xlink:href="#icon-victor"></use></svg>
-               <p class="modal-product__text">ice cream</p> 
+          <p class="buyNow-products__text">ice coffee</p> 
         </li>
         <li class="ice-cream">
-            <svg  width="132" height="133" > 
-                <use xlink:href="#icon-victor"></use></svg>
-               <p class="modal-product__text">ice coffee</p> 
+          <svg  width="132" height="133" > 
+            <use xlink:href="#icon-victor"></use>
+          </svg>
+          <p class="buyNow-products__text">milkshake</p> 
         </li>
-        <li class="ice-cream">
-            <svg  width="132" height="133" > 
-                <use xlink:href="#icon-victor"></use></svg>
-               <p class="modal-product__text">milkshake</p> 
-        </li>
-        </ul>
-
-        <form class="modal-form" action="">
-
-        <div class="form">
-        <label for="name" class="form-label" ></label>
-        <input class="form-imput " type="name" id="name" placeholder="Name"> </div>
-
-        <div class="form">
-        <label for="tel" class="form-label"></label>
-        <input class="form-imput " type="tel" name="tel" id="tel"placeholder="Phone"></div>
-
-       
-        <div class="form">
-            <label class="form-label" for="comment"></label>
-            <textarea class="area" name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea></div>
-        
-        <button type="submit" class="submit-button button pointer link">Submit</button>
-    </form>
-    </div>
+      </ul>
+      <form class="form">
+        <div class="form-group" role="group" aria-labelledby="details">
+          <label class="form__item">
+            <input type="name" name="name" class="form__item-input" placeholder="Name" pattern="\w{0,16}">
+          </label>
+          <label class="form__item">
+            <input type="tel" name="tel" class="form__item-input" placeholder="Phone" pattern="\d{9,15}">
+          </label>
+          <label class="form__item">
+            <textarea name="comment" class="form__item-textarea" rows="10" placeholder="Comment" pattern="\d{0,300}"></textarea>
+          </label>
+        </div>
+        <button type="submit" class="form__submit">Відправити</button>
+      </form>
+   </div>
+</div>

@@ -85,6 +85,7 @@
   }
 }
 .buynow-menu {
+  height: 42px;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -98,6 +99,18 @@
   @media screen and (min-width: $tablet) { 
     display: none;
   }
+  &:hover {
+    background-color: $hoverColor;
+    transition: $transition;
+    opacity: 0.9;
+    cursor: pointer;
+ }
+ &:focus {
+  background-color: $hoverColor;
+  color: $white;
+  outline: none;
+  transition: $transition;
+ }
 }
 .menu {
   display: flex;
