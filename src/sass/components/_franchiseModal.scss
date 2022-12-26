@@ -1,4 +1,4 @@
-.is-hidden-franchise {
+.franchise-is-hidden {
   visibility: hidden;
 }
 .franchise-backdrop {
@@ -95,6 +95,7 @@
   font-size: 12px;
   line-height: 140%;
   background-color: #F8D24E1A;
+  resize: none;
   @media screen and (min-width: $tablet) {
     width: 368px;
     margin-bottom: 32px;

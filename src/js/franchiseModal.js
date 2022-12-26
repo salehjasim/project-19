@@ -9,6 +9,6 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle("is-hidden-franchise");
+    refs.modal.classList.toggle("franchise-is-hidden");
   }
 })();
