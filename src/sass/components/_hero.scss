@@ -13,46 +13,32 @@
 		width: 320px;
 	}
 
-  @media screen and (min-width: 768px) {
-		width: 768px;
+  @media screen and (min-width: $tablet) {
+		width: $tablet;
 	}
 
-  @media screen and (min-width: 1200px) {
-		width: 1200px;
+  @media screen and (min-width: $desktop) {
+		width: $desktop;
 	}
-
-	// padding-left: 15px;
-	// padding-right: 15px;
-
-
-	// @media screen and (min-width: 320px) {
-	// 	width: 100%;
-	// }
-	// @media screen and (min-width: 768px) {
-	// 	width: 100%;
-	// }
-	// @media screen and (min-width: 1200px) {
-	// 	width: 1200px;
-	// }
 }
+
 
 // hero
 .hero {
   height: calc(403px);
-  background: #84A278;
+  background: $primaryColor;
 
   @media screen and (min-width: 320px) {
    height: calc(502px - 99px);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     height: calc(415px - 80px);
    }
 
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: $desktop) {
     height: calc(664px - 118px);
    }
- 
 }
 .sections {
   position: relative;
@@ -67,8 +53,7 @@
   line-height: calc(34 / 26);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #FCFCFC;
-
+  color: $white;
 
   @media screen and (max-width: 767px) {
     padding-left: 20px;
@@ -85,7 +70,7 @@
     margin-bottom: 24px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 38px;
     line-height: 1.26;
     width: 372px;
@@ -100,12 +85,12 @@
     line-height: 1.03;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     font-size: 24px;
     line-height: 0.54;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 38px;
   }
 }
@@ -114,11 +99,11 @@
   right: 60px;
   top: 186px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     right: 95px;
     top: 6px;
   } 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     right: 95px;
     top: -15px;
     }
@@ -127,18 +112,14 @@
   position: absolute;
   top: 351px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     top: 265px;
   } 
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     top: 159px;
  }
-
 }
-
-
-
 
 
 // about-product
@@ -147,14 +128,13 @@
   gap: 12px;
   margin-left: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-left: 0px;
 	}
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-left: 16px;
 	}
-
 }
 .about-products,
 .about-product_made {
@@ -165,16 +145,15 @@
   line-height: calc(15 / 12);
   z-index: 22;
   height: 42px;
-
 }
 
 .about-products {
   padding: 11px 26px;
   text-align: center;
-  color: #000000;
+  color: $black;
   text-decoration: none;
 
-  border: 2px solid #F8D24E;
+  border: 2px solid $secondaryYellow;
   border-radius: 8px;
 
   @media screen and (max-width: 280px) {
@@ -184,17 +163,17 @@
 
   &:hover,
   &:focus {
-    color: #F8D24E;
+    transition: $transition;
+    color: $secondaryYellow;
     background: $hoverColor;
   }
-
 }
 .about-product_made {
   padding: 11px 12px;
   text-align: center;
   // text-decoration: underline;
   text-decoration-line: underline;
-  color: #F8D24E;
+  color: $secondaryYellow;
 
   @media screen and (max-width: 280px) {
     padding: 0;  
@@ -202,15 +181,15 @@
 
   &:hover,
   &:focus {
+    transition: $transition;
     border: 2px solid $hoverColor;
-    color: #131313;
+    color: $black;
     border-radius: 8px;
   }
 }
 
 
 // cafes_truck
-
 .cafes_truck {
   position: absolute;
   top: 8px;
@@ -223,11 +202,9 @@
     right: 0;
 	}
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     right: 32px;
   }
-
-
 }
 
 .cafes_truck_number,
@@ -239,7 +216,6 @@
   text-align: right;
 }
 
-
 .cafes_truck_number {
   font-weight: 900;
   font-size: 28px;
@@ -247,9 +223,9 @@
 
   letter-spacing: 0.04em;
 
-  color: #131313;
+  color: $black;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 46px;
     line-height: calc(56 / 46);
 	}
@@ -261,20 +237,16 @@
   font-size: 8px;
   line-height: calc(10 / 8);
 
-  color: #FCFCFC;
+  color: $white;
 
   margin-top: 4px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: calc(17 / 14);
 	}
 
 }
-
-
-
-
 
 
 // many-ice
@@ -289,13 +261,13 @@
   position: absolute;
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: block;
     left: 32px;
     top: 163px;
 	} 
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
     display: block;
     left: 16px;
     top: 253px;
@@ -313,13 +285,13 @@
     display: none;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 154px;
     left: 32px;
     bottom: 13px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 225px;
     left: 16px;
     bottom: 61px;
@@ -351,17 +323,17 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
-  color: #FCFCFC;
+  color: $white;
   width: 140px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: block;
     font-size: 12px;
     width: 140px;
     left: 208px;
     top: 175px;
 	} 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: block;
     font-size: 14px;
     width: 200px;
@@ -376,18 +348,16 @@
   left: 260px;
   top: 430px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: block;
     left: 208px;
     top: 290px;
 	} 
 
-
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     left: 260px;
     top: 430px;
 	} 
-
 }
 
 
