@@ -38,10 +38,32 @@
   .modal-close-svg:hover {
     fill: currentColor;
   }
+  .data {
+    margin-top: 32px;
+  margin-bottom: 40px;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  }
+
   .modal-product{
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 32px;
+    &__text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    }
   }
 
   .modal-form{
@@ -49,7 +71,7 @@
   }
   .form {
    margin-left: 100px;
-   margin-bottom: 10px;
+   margin-bottom: 16px;
    width: 368px;
   }
   .form-imput {
@@ -61,41 +83,35 @@
     border: 1px solid $primaryColor;
     border-radius: 4px;
     outline-style: none;
-    cursor: pointer;
-    font-family: 'Montserrat';
+    background-color: rgba(248, 210, 78, 0.1);
+    
+  }
+  .form-imput::placeholder{
+   font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    background-color: rgba(248, 210, 78, 0.1);
-    
-  }
-
-
-  .data {
-    margin-top: 32px;
-  margin-bottom: 40px;
-  font-family: 'Seymour One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+    color: $black;
   }
   
   .area {
     width: 368px;
     height: 84px;
+    padding-left: 16px;
+    padding-top: 10px;
     background-color: rgba(248, 210, 78, 0.1);
     border: 1px solid #84A178;
     border-radius: 10px;
   }
-  .area ::placeholder {
-    // font-family: $main-font;
+  .area::placeholder {
+    margin-left: 10px;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
+    font-size: 14px;
+    line-height: 140%;
+    color: $black;
   }
   
  
@@ -108,15 +124,12 @@
  
   }
  
-
   textarea {
     resize: none;
   }
 
- 
-  
   .submit-button {
-    margin-top: 20px;
+    margin-top: 22px;
     width: 121px;
     height: 42px;
     left: 224px;
