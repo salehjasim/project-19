@@ -184,8 +184,8 @@
 
   &:hover,
   &:focus {
-    border: 2px solid $hoverColor;
     color: #F8D24E;
+    background: $hoverColor;
   }
 
 }
@@ -372,10 +372,12 @@
 
 .many-ice_arrow {
   position: absolute;
+  display: none;
   left: 260px;
   top: 430px;
 
   @media screen and (min-width: 768px) {
+    display: block;
     left: 208px;
     top: 290px;
 	} 
