@@ -104,15 +104,15 @@
 }
 .hero-img_ice {
   position: absolute;
-  right: 60px;
+  left: 60px;
   top: 186px;
 
   @media screen and (min-width: $tablet) {
-    right: 95px;
+    left: 390px;
     top: 6px;
   } 
   @media screen and (min-width: $desktop) {
-    right: 95px;
+    left: 620px;
     top: -15px;
     }
 }
