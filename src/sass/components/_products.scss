@@ -30,7 +30,6 @@
 
 
     &__container {
-        // max-width: 100%;
         margin: 0 auto;
         padding-left: 20px;
         padding-right: 20px;
@@ -108,12 +107,12 @@
 .products__card {
     display: flex;
     position: relative;
-    // flex-basis: 280px;
     flex-direction: column;
+    // flex-basis: 280px;
     // min-height: 420px;
     width: 280px;
     height: 420px;
-    text-align: center;
+    // text-align: center;
     border-radius: 24px;
 
     padding-top: 123px;
@@ -151,7 +150,6 @@
     transform: translate(-50%, -50%);
     width: 242px;
     height: 241px;
-    // background-repeat: no-repeat;
     border-radius: 50%;
     background-image: url(../images/products/ice_cream_sm@1x.png);
     background-size: contain;
@@ -200,7 +198,6 @@
     transform: translate(-50%, -50%);
     width: 242px;
     height: 241px;
-    // background-repeat: no-repeat;
     border-radius: 50%;
     background-image: url(../images/products/ice_coffee_sm@1x.png);
     background-size: contain;
@@ -310,33 +307,29 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 176%;
+    line-height: 1,76;
     text-align: center;
     letter-spacing: 0.04em;
     margin: 0 auto;
 
-    color: #131313;
+    color: $black;
 
     @media screen and (min-width: $desktop) {
         font-size: 16px;
     }
 }
 .products__button {
-    display: inline-block;
+    display: flex;
     align-self: center;
-    margin-bottom: 24px;
+    height: 22px;
+    justify-content: center;
+    margin-top: auto;
+    padding: 0;
     background-color: transparent;
-    border: transparent;
-
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 20px;
-    }
-    @media screen and (min-width: $desktop) {
-        margin-bottom: 67px;
-    }
-    
+    outline: transparent;
+    border: none;
 }
-.products__list .product__icon {
+.product__icon {
     width: 40px;
     height: 14px;
     cursor: pointer;
