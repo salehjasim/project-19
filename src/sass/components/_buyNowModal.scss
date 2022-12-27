@@ -42,9 +42,7 @@
   font-size: 20px;
   line-height: 28px;
 }
-.ice-cream{
-  z-index: 1;
-}
+
 .background-ice-cream{
   position: absolute;
   z-index: -1;
@@ -199,17 +197,23 @@ border-radius: 15.7808px;
   margin-bottom: 60px;
   flex-wrap: wrap;
   gap: 20px;
-
+  padding-top: 63px;
   &__text{
     margin-top: 19px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    left: 13px;
+  }
+  @media screen and (max-width: calc($tablet - 1px)) {
+    margin-bottom: 31px;
   }
   @media screen and (min-width: $tablet) {
     gap: 32px;
@@ -217,6 +221,9 @@ border-radius: 15.7808px;
   }
 }
 
+.buyNow-products__text--ice{
+  width: 106px;
+}
 .modal-form{
   justify-content: center;
 }
@@ -289,4 +296,82 @@ border-radius: 15.7808px;
   text-align: center;
   color: $black;
   cursor: pointer;
+}
+.ice-cream {
+  display: block;
+  position: relative;
+  width: 132px;
+  height: 136px;
+  border-radius: 15px;
+  border: 2px solid #96AF8C;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  &:has(> .buyNow-checkbox:checked) {
+    background-color: #84A178;
+  }
+  @media screen and (max-width: calc($tablet - 1px)) {
+    margin-bottom: 63px;
+  }
+}
+.ice-coffee {
+  display: block;
+  position: relative;
+  width: 132px;
+  height: 136px;
+  border-radius: 15px;
+  border: 2px solid #EFD478;
+  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+  border-radius: 15px;
+  &:has(> .buyNow-checkbox:checked) {
+    background-color: #EFD478;
+  }
+  @media screen and (max-width: calc($tablet - 1px)) {
+    margin-bottom: 63px;
+  }
+}
+.milkshake {
+  display: block;
+  position: relative;
+
+  width: 132px;
+  height: 136px;
+  border-radius: 15px;
+  border: 2px solid #D6936D;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  border-radius: 15.7808px;
+  &:has(> .buyNow-checkbox:checked) {
+    background-color: #D6936D;
+  }
+  @media screen and (max-width: calc($tablet - 1px)) {
+    margin-bottom: 0px;
+  }
+}
+.buyNow-img {
+  position: absolute;
+  top: -66px;
+  left: -22px;
+}
+.buyNow-label {
+  cursor: pointer;
+}
+.buyNow-checkbox {
+  position: relative;
+  z-index: -200;
+  opacity: 0.1;
+  width: 132px;
+  height: 136px;
+  display: none;
+  &:checked + .ice-coffee {
+    background-color: #84A178;
+
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.checkbox-thumb {
+  position: relative;
+  z-index: -200;
+  opacity: 0.1;
+  width: 132px;
+  height: 136px;
 }

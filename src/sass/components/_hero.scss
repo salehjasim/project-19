@@ -10,7 +10,7 @@
 	margin-right: auto;
 
   @media screen and (min-width: 320px) {
-		width: 320px;
+		width: 300px;
 	}
 
   @media screen and (min-width: $tablet) {
@@ -56,7 +56,6 @@
   color: $white;
 
   @media screen and (max-width: 767px) {
-    padding-left: 20px;
     margin-bottom: 32px;
     width: 70%;
 
@@ -96,7 +95,7 @@
 }
 .hero-img_ice {
   position: absolute;
-  right: 60px;
+  right: 59px;
   top: 186px;
 
   @media screen and (min-width: $tablet) {
@@ -110,7 +109,8 @@
 }
 .hero-img_point {
   position: absolute;
-  top: 351px;
+  top: 353px;
+  left: -20px;
 
   @media screen and (min-width: $tablet) {
     top: 265px;
@@ -126,7 +126,6 @@
 .about-product {
   display: flex;
   gap: 12px;
-  margin-left: 20px;
 
   @media screen and (min-width: $tablet) {
     margin-left: 0px;
@@ -195,7 +194,7 @@
   top: 8px;
   right: 16px;
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 479px) {
     display: none;
 	}
   @media screen and (min-width: 450px) and (max-width: 767px) {
