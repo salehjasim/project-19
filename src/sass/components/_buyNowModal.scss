@@ -33,19 +33,6 @@
   }
 }
   
-
-.close{
-  &:hover,&:focus{
-  // fill: $accent-color;
-  // background-color: $title-first-color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-}
-// .close:hover svg {
-//   fill: $accent-color;
-// }
-.modal-close-svg:hover {
-  fill: currentColor;
-}
 .buyNow__heading {
   margin-top: 32px;
   margin-bottom: 40px;
@@ -55,15 +42,166 @@
   font-size: 20px;
   line-height: 28px;
 }
+.ice-cream{
+  z-index: 1;
+}
+.background-ice-cream{
+  position: absolute;
+  z-index: -1;
+  top: 28%;
+  left: 31px;
+}
+.background-ice-coffee{
+  position: absolute;
+  z-index: -1;
+  left: 35%;
+  top: 28%;
+}
+.background-milkshake{
+  position: absolute;
+  z-index: -1;
+  left: 64%;
+  top: 28%;
+}
+.buyNow__icon-ice-cream{
+  position: absolute;
+  z-index: -1;
+  top: 40%;
+  left: 26%;
+  border: 2px solid #96AF8C;
+filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+border-radius: 15px;
+  }
+  .buyNow__icon-ice-coffee{
+    position: absolute;
+    z-index: -2;
+    top: 92%;
+    left: 26%;
+    background: #EFD478;
+border: 2px solid #EFD478;
+box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+border-radius: 15px;
+  }
+  .buyNow__icon-milkshake{
+    position: absolute;
+    z-index: -1;
+    top: 146%;
+    left: 26%;
+    border: 2px solid #D6936D;
+filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+border-radius: 15.7808px;
+  }
+
+// @media screen and (max-width: $mobile) {
+//   .buyNow__icon-ice-cream{
+//     position: absolute;
+//     z-index: -1;
+//     top: 41%;
+//     left: 26%;
+//     }
+//     .buyNow__icon-ice-coffee{
+//       position: absolute;
+//       z-index: -1;
+//       top: 93%;
+//       left: 26%;
+ 
+//     }
+//     .buyNow__icon-milkshake{
+//       position: absolute;
+//       z-index: -1;
+//       top: 146%;
+//       left: 26%;
+  
+//     }
+// }
+@media screen and (min-width: $tablet) {
+  .background-ice-cream{
+    position: absolute;
+    z-index: -1;
+    top: 34%;
+    left: 31px;
+  }
+  .background-ice-coffee{
+    position: absolute;
+    z-index: -1;
+    left: 35%;
+    top: 34%;
+  }
+  .background-milkshake{
+    position: absolute;
+    z-index: -1;
+    left: 64%;
+    top: 34%;
+  }
+  .buyNow__icon-ice-cream{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 9%;
+    }
+    .buyNow__icon-ice-coffee{
+      position: absolute;
+      z-index: -2;
+      top: 50%;
+      left: 38%;
+ 
+    }
+    .buyNow__icon-milkshake{
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 380px;
+  
+    }
+}
+@media screen and (min-width: $desktop){
+  .background-ice-cream{
+    position: absolute;
+    z-index: -1;
+    top: 28%;
+    left: 31px;
+  }
+  .background-ice-coffee{
+    position: absolute;
+    z-index: -1;
+    left: 35%;
+    top: 28%;
+  }
+  .background-milkshake{
+    position: absolute;
+    z-index: -1;
+    left: 64%;
+    top: 28%;
+  }
+.buyNow__icon-ice-cream{
+  position: absolute;
+  z-index: -1;
+  top: 40%;
+  left: 9%;
+  }
+  .buyNow__icon-ice-coffee{
+    position: absolute;
+    z-index: -2;
+    top: 40%;
+    left: 38%;
+    background: #EFD478;
+  }
+  .buyNow__icon-milkshake{
+    position: absolute;
+    z-index: -1;
+    top: 40%;
+    left: 380px;
+  }}
 
 .buyNow-products{
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   flex-wrap: wrap;
   gap: 20px;
 
   &__text{
+    margin-top: 19px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -82,11 +220,7 @@
 .modal-form{
   justify-content: center;
 }
-// .form {
-//   margin-left: 100px;
-//   margin-bottom: 16px;
-//   width: 368px;
-// }
+
 .form-imput {
   box-sizing: border-box;
   padding: 0;
@@ -137,7 +271,6 @@
 
 }
 
-
 .submit-button {
   margin-top: 22px;
   width: 121px;
@@ -157,4 +290,3 @@
   color: $black;
   cursor: pointer;
 }
- 
