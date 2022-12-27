@@ -42,60 +42,14 @@
   font-size: 20px;
   line-height: 28px;
 }
-
-@media screen and (min-width: $tablet) {
-  .buyNow__icon-ice-cream{
-    position: absolute;
-    z-index: -1;
-    top: 41%;
-    left: 26%;
-    }
-    .buyNow__icon-ice-coffee{
-      position: absolute;
-      z-index: -1;
-      top: 93%;
-      left: 26%;
- 
-    }
-    .buyNow__icon-milkshake{
-      position: absolute;
-      z-index: -1;
-      top: 146%;
-      left: 26%;
-  
-    }
-}
-@media screen and (min-width: $mobile) {
-  .buyNow__icon-ice-cream{
-    position: absolute;
-    z-index: -1;
-    top: 41%;
-    left: 26%;
-    }
-    .buyNow__icon-ice-coffee{
-      position: absolute;
-      z-index: -1;
-      top: 93%;
-      left: 26%;
- 
-    }
-    .buyNow__icon-milkshake{
-      position: absolute;
-      z-index: -1;
-      top: 146%;
-      left: 26%;
-  
-    }
-}
-
 .ice-cream{
   z-index: 1;
 }
 .buyNow__icon-ice-cream{
   position: absolute;
   z-index: -1;
-  top: 41%;
-  left: 9%;
+  top: 40%;
+  left: 26%;
   border: 2px solid #96AF8C;
 filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
 border-radius: 15px;
@@ -103,8 +57,8 @@ border-radius: 15px;
   .buyNow__icon-ice-coffee{
     position: absolute;
     z-index: -1;
-    top: 41%;
-    left: 38%;
+    top: 92%;
+    left: 26%;
     background: #EFD478;
 border: 2px solid #EFD478;
 box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
@@ -113,12 +67,79 @@ border-radius: 15px;
   .buyNow__icon-milkshake{
     position: absolute;
     z-index: -1;
-    top: 41%;
-    left: 380px;
+    top: 146%;
+    left: 26%;
     border: 2px solid #D6936D;
 filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
 border-radius: 15.7808px;
   }
+
+// @media screen and (max-width: $mobile) {
+//   .buyNow__icon-ice-cream{
+//     position: absolute;
+//     z-index: -1;
+//     top: 41%;
+//     left: 26%;
+//     }
+//     .buyNow__icon-ice-coffee{
+//       position: absolute;
+//       z-index: -1;
+//       top: 93%;
+//       left: 26%;
+ 
+//     }
+//     .buyNow__icon-milkshake{
+//       position: absolute;
+//       z-index: -1;
+//       top: 146%;
+//       left: 26%;
+  
+//     }
+// }
+@media screen and (min-width: $tablet) {
+  .buyNow__icon-ice-cream{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 9%;
+    }
+    .buyNow__icon-ice-coffee{
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 38%;
+ 
+    }
+    .buyNow__icon-milkshake{
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 380px;
+  
+    }
+}
+
+
+@media screen and (min-width: $desktop){
+.buyNow__icon-ice-cream{
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 9%;
+  }
+  .buyNow__icon-ice-coffee{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 38%;
+    background: #EFD478;
+  }
+  .buyNow__icon-milkshake{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 380px;
+  }}
 
 .buyNow-products{
   display: flex;
