@@ -9,8 +9,10 @@
 	margin-left: auto;
 	margin-right: auto;
 
+
   @media screen and (min-width: 320px) {
 		width: 300px;
+
 	}
 
   @media screen and (min-width: $tablet) {
@@ -55,6 +57,15 @@
   text-transform: uppercase;
   color: $white;
 
+  @media screen and (max-width: 320px) {
+    margin-bottom: 32px;
+    width: 70%;
+
+    font-size: 21px;
+    line-height: 1.27;
+  }
+
+
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
     width: 70%;
@@ -74,7 +85,7 @@
     line-height: 1.26;
     width: 372px;
 
-    padding-left: 16px;
+    // padding-left: 16px;
     margin-bottom: 28px;
 	}
 }
@@ -109,7 +120,9 @@
 }
 .hero-img_point {
   position: absolute;
+
   top: 353px;
+
   left: -20px;
 
   @media screen and (min-width: $tablet) {
@@ -132,7 +145,7 @@
 	}
 
   @media screen and (min-width: $desktop) {
-    margin-left: 16px;
+    margin-left: 0px;
 	}
 }
 .about-products,
@@ -163,8 +176,8 @@
   &:hover,
   &:focus {
     transition: $transition;
-    color: $secondaryYellow;
     background: $hoverColor;
+    border: 2px solid $hoverColor;
   }
 }
 .about-product_made {
@@ -182,7 +195,6 @@
   &:focus {
     transition: $transition;
     border: 2px solid $hoverColor;
-    color: $black;
     border-radius: 8px;
   }
 }
