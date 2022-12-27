@@ -182,6 +182,7 @@
   // text-decoration: underline;
   text-decoration-line: underline;
   color: $secondaryYellow;
+  border: 2px solid transparent;
 
   @media screen and (max-width: 280px) {
     padding: 0;  
