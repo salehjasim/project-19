@@ -55,6 +55,33 @@
   font-size: 20px;
   line-height: 28px;
 }
+.buyNow__icon-ice-cream{
+  position: absolute;
+  top: 41%;
+  left: 9%;
+  border: 2px solid #96AF8C;
+filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+border-radius: 15px;
+  }
+  .buyNow__icon-ice-coffee{
+    position: absolute;
+    top: 41%;
+    left: 38%;
+    background: #EFD478;
+border: 2px solid #EFD478;
+box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+border-radius: 15px;
+  }
+  .buyNow__icon-milkshake{
+    position: absolute;
+    top: 41%;
+    left: 380px;
+    border: 2px solid #D6936D;
+filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+border-radius: 15.7808px;
+  }
+
+
 
 .buyNow-products{
   display: flex;
