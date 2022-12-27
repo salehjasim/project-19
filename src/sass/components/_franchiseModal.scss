@@ -28,7 +28,6 @@
     top: calc(50% - 334px);
     padding: 32px 60px;
   }
-
 }
 .franchise__heading {
   font-family: 'Seymour One';
@@ -75,7 +74,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 140%;
-  background-color: #F8D24E1A;
+  background-color: #f8d24e1a;
   color: $black;
   @media screen and (min-width: $tablet) {
     width: 368px;
@@ -93,7 +92,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 140%;
-  background-color: #F8D24E1A;
+  background-color: #f8d24e1a;
   @media screen and (min-width: $tablet) {
     width: 368px;
     margin-bottom: 32px;
@@ -110,7 +109,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
-  line-height: calc(15/12);
+  line-height: calc(15 / 12);
   cursor: pointer;
   @media screen and (min-width: $tablet) {
     font-size: 14px;
