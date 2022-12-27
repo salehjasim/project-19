@@ -83,6 +83,9 @@
     width: 368px;
     margin-bottom: 16px;
   }
+  &:not(:focus):invalid {
+    border: 1px solid red;
+  }
 }
 .form__item-textarea {
   padding: 8px 12px;
