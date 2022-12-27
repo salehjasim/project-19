@@ -3,12 +3,12 @@
   background-position: center;
   background-size: cover;
   // padding-top: 178px;
-  padding-bottom: 393px;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 379px;
+  padding-bottom: 361px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 235px;
   }
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 228px;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 130px;
   }
   /*phone*/
   background-image: url(../images/customer/img3-mobile@1x.webp);
@@ -40,14 +40,30 @@
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  border-radius: 8px;
+  @media screen and (min-width: $tablet){
+    border-radius: 18px;
+    
+  }
+   @media screen and (min-width: $desktop){
+    border-radius: 24px;
 }
+}
+
 .swiper__img {
   margin-bottom: 32px;
 }
 .swiper__image {
   display: block;
-  margin: 0 auto;
+  margin: 80px auto 32px;
   border-radius: 50%;
+   @media screen and (min-width: $tablet){
+    margin: 100px auto 32px;
+    
+  }
+   @media screen and (min-width: $desktop){
+    margin: 140px auto 32px;
+}
 }
 .swiper__comment {
   padding: 35px 39px;
@@ -78,8 +94,10 @@
   font-size: 20px;
   line-height: 186%;
   margin-top: 32px;
+  padding-bottom: 12px;
   @media screen and (min-width: 768px) {
     font-size: 16px;
+    padding-bottom: 32px;
   }
 }
 .swiper-pagination {
@@ -116,4 +134,21 @@
     max-width: 100%;
     height: 327px;
   }
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: -4px;
+   @media screen and (min-width: $tablet) {
+    padding-bottom: 32px;
+    bottom: -16px;
+  }
+}
+
+.swiper-container {
+  transform: translateY(-32px);
+  @media screen and (min-width: $tablet){
+    transform: translateY(-144px);
+}
+@media screen and (min-width: $desktop){
+    transform: translateY(-98px);
+}
 }
