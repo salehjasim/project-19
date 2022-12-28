@@ -1,0 +1,93 @@
+<div class="products-backdrop">
+  <div class="modal-products">
+    <button type="button" class="modal-products__close">
+      <svg class="close-icon">
+        <use xlink:href="#close-icon"></use>
+      </svg>
+    </button>
+    <h2 class="modal-products__title">Chololate icecream</h2>
+
+    <div class="modal-products__picture">
+      <img
+        srcset="
+          ./images/modal-icecream.png    1x,
+          ./images/modal-icecream_2x.png 2x
+        "
+        class="modal-icecream-png"
+        src="./images/modal-icecream.png"
+        alt="icecream"
+        width="165"
+        height="160"
+      />
+    </div>
+
+    <ul class="modal-products__table">
+      <li class="modal-products__block">
+        <p class="modal-products__table-weight">320</p>
+        <p class="modal-products__table-class">kcal</p>
+      </li>
+      <li class="modal-products__block">
+        <p class="modal-products__table-weight">4g</p>
+        <p class="modal-products__table-class">Prote...</p>
+      </li>
+      <li class="modal-products__block">
+        <p class="modal-products__table-weight">8,2g</p>
+        <p class="modal-products__table-class">Fats</p>
+      </li>
+      <li class="modal-products__block">
+        <p class="modal-products__table-weight">40,4g</p>
+        <p class="modal-products__table-class">Carbs</p>
+      </li>
+    </ul>
+
+    <h3 class="modal-products__text">Ingredients</h3>
+
+    <div class="modal-products__ingredients">
+      <ul>
+        <li class="modal-products__item">Milk</li>
+        <li class="modal-products__item">Belgian chocolate</li>
+        <li class="modal-products__item">Cream</li>
+        <li class="modal-products__item">Cocoa powder</li>
+        <li class="modal-products__item">Sugar</li>
+        <li class="modal-products__item">Vanilla sugar</li>
+      </ul>
+      <ul class="modal-products__weight">
+        <li class="modal-products__item-weight">100ml</li>
+        <li class="modal-products__item-weight">20g</li>
+        <li class="modal-products__item-weight">150 ml</li>
+        <li class="modal-products__item-weight">30g</li>
+        <li class="modal-products__item-weight">40g</li>
+        <li class="modal-products__item-weight">10g</li>
+      </ul>
+    </div>
+    <form class="form">
+      <div class="form-group" role="group" aria-labelledby="details">
+        <label class="form__item">
+          <input
+            type="name"
+            name="name"
+            class="form__item-input"
+            placeholder="Name"
+          />
+        </label>
+        <label class="form__item">
+          <input
+            type="tel"
+            name="tel"
+            class="form__item-input"
+            placeholder="Phone"
+          />
+        </label>
+        <label class="form__item">
+          <textarea
+            name="comment"
+            class="form__item-textarea"
+            rows="10"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+      </div>
+      <button type="submit" class="form__submit">Submit</button>
+    </form>
+  </div>
+</div>
