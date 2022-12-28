@@ -4,50 +4,36 @@
 	padding: 0;
 }
 
-.sections {
-	width: 100%;
+.hero-container {
+  position: relative;
+
+	width: 320px;
 	margin-left: auto;
 	margin-right: auto;
 
+  @media screen and (min-width: 480px) {
+    width: 480px;
 
-  @media screen and (min-width: 320px) {
-		width: 300px;
+  }
 
+
+  @media screen and (min-width: 768px) {
+		width: 768px;
 	}
 
-  @media screen and (min-width: $tablet) {
-		width: $tablet;
-	}
-
-  @media screen and (min-width: $desktop) {
-		width: $desktop;
+  @media screen and (min-width: 1200px) {
+		width: 1200px;
 	}
 }
 
 
 // hero
 .hero {
-  height: calc(403px);
-  background: $primaryColor;
-
-  @media screen and (min-width: 320px) {
-   height: calc(502px - 99px);
-  }
-
-  @media screen and (min-width: $tablet) {
-    height: calc(415px - 80px);
-   }
-
-   @media screen and (min-width: $desktop) {
-    height: calc(664px - 118px);
-   }
+  background: #84A178;
 }
-.sections {
-  position: relative;
-}
+
 
 .hero-title {
-  width: 70%;
   font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
@@ -55,38 +41,25 @@
   line-height: calc(34 / 26);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: $white;
+  color: #FCFCFC;
+  margin-left: 20px;
+  width: 250px;
 
-  @media screen and (max-width: 320px) {
-    margin-bottom: 32px;
+  @media screen and (max-width: 319px) {
     width: 70%;
-
     font-size: 21px;
     line-height: 1.27;
   }
 
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 32px;
-    width: 70%;
-
-    font-size: 21px;
-    line-height: 1.27;
-  }
-  @media screen and (min-width: 767px) and (max-width: 1199px) {
-    font-size: 19px;
-    line-height: 1.27;
-    width: 250px;
-    margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
     font-size: 38px;
     line-height: 1.26;
     width: 372px;
-
-    // padding-left: 16px;
-    margin-bottom: 28px;
+    margin-left: 16px;
 	}
 }
 .hero-title__span {
@@ -95,43 +68,60 @@
     line-height: 1.03;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 24px;
     line-height: 0.54;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
     font-size: 38px;
   }
 }
-.hero-img_ice {
-  position: absolute;
-  right: 59px;
-  top: 186px;
 
-  @media screen and (min-width: $tablet) {
-    right: 95px;
-    top: 6px;
-  } 
-  @media screen and (min-width: $desktop) {
-    right: 95px;
-    top: -15px;
-    }
+// hero-image
+
+.hero__icecream {
+  position: absolute;
+
+  width: 177px;
+  bottom: -3px;
+  left: 83px;
+
+
+  @media screen and (min-width: 480px) {
+    bottom: -3px;
+    left: 243px;
+  }
+
+  @media screen and (min-width: 768px) {
+    bottom: -3px;
+    left: 410px;
+  }
+
+    @media screen and (min-width: 1200px) {
+    bottom: -3px;
+    left: 664px;
+  }
 }
-.hero-img_point {
+
+.hero__doots {
   position: absolute;
 
-  top: 353px;
+  width: 320px;
+  bottom: 0;
 
-  left: -20px;
 
-  @media screen and (min-width: $tablet) {
-    top: 265px;
-  } 
+  @media screen and (min-width: 480px) {
+    right: 0px;
+  }
 
-  @media screen and (min-width: $desktop) {
-    top: 159px;
- }
+  @media screen and (min-width: 768px) {
+    left: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 0px;
+  }
 }
 
 
@@ -139,13 +129,22 @@
 .about-product {
   display: flex;
   gap: 12px;
+  margin-left: 20px;
+  margin-top: 32px;
+  padding-bottom: 236px;
 
-  @media screen and (min-width: $tablet) {
-    margin-left: 0px;
-	}
+  @media screen and (min-width: 480px) {
+    padding-bottom: 150px;
+  }
 
-  @media screen and (min-width: $desktop) {
-    margin-left: 0px;
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
+    padding-bottom: 176px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 16px;
+    padding-bottom: 332px;
 	}
 }
 .about-products,
@@ -162,10 +161,10 @@
 .about-products {
   padding: 11px 26px;
   text-align: center;
-  color: $black;
+  color: #131313;
   text-decoration: none;
 
-  border: 2px solid $secondaryYellow;
+  border: 2px solid #F8D24E;
   border-radius: 8px;
 
   @media screen and (max-width: 280px) {
@@ -175,9 +174,9 @@
 
   &:hover,
   &:focus {
-    transition: $transition;
-    background: $hoverColor;
-    border: 2px solid $hoverColor;
+    transition: all cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    background: #0A8817;
+    border: 2px solid #0A8817;
   }
 }
 .about-product_made {
@@ -185,7 +184,8 @@
   text-align: center;
   // text-decoration: underline;
   text-decoration-line: underline;
-  color: $secondaryYellow;
+  color: #F8D24E;
+  border: 2px solid transparent;
 
   @media screen and (max-width: 280px) {
     padding: 0;  
@@ -193,8 +193,8 @@
 
   &:hover,
   &:focus {
-    transition: $transition;
-    border: 2px solid $hoverColor;
+    transition: all cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    border: 2px solid #0A8817;
     border-radius: 8px;
   }
 }
@@ -204,17 +204,15 @@
 .cafes_truck {
   position: absolute;
   top: 8px;
-  right: 16px;
+  right: 32px;
 
-  @media screen and (max-width: 479px) {
+
+  @media screen and (max-width: 767.9px) {
+
     display: none;
 	}
-  @media screen and (min-width: 450px) and (max-width: 767px) {
-    right: 0;
-	}
-
-  @media screen and (min-width: $tablet) {
-    right: 32px;
+  @media screen and (min-width: 1200px) {
+    right: 16px;
   }
 }
 
@@ -234,9 +232,9 @@
 
   letter-spacing: 0.04em;
 
-  color: $black;
+  color: #131313;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
     font-size: 46px;
     line-height: calc(56 / 46);
 	}
@@ -248,11 +246,11 @@
   font-size: 8px;
   line-height: calc(10 / 8);
 
-  color: $white;
+  color: #FCFCFC;
 
   margin-top: 4px;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: calc(17 / 14);
 	}
@@ -262,7 +260,6 @@
 
 // many-ice
 .many-ice {
-  
   @media screen and (max-width: 320px) {
     display: none;
 	} 
@@ -272,18 +269,18 @@
   position: absolute;
   display: none;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
     display: block;
     left: 32px;
-    top: 163px;
-	} 
+    bottom: 12px;
+	}
 
-    @media screen and (min-width: $desktop) {
-    display: block;
+  @media screen and (min-width: 1200px) {
     left: 16px;
-    top: 253px;
+    bottom: 65px;
 	} 
 }
+
 .effects {
   animation-name: pulsar;
   animation-duration: 4500ms;
@@ -296,13 +293,13 @@
     display: none;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 154px;
     left: 32px;
     bottom: 13px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
     width: 225px;
     left: 16px;
     bottom: 61px;
@@ -326,50 +323,42 @@
 .many-ice_text {
   position: absolute;
   display: none;
-  left: 260px;
-  top: 320px;
+  left: 216px;
+  bottom: 52px;
 
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 140%;
-  color: $white;
+  color: #FCFCFC;
   width: 140px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
     display: block;
-    font-size: 12px;
-    width: 140px;
-    left: 208px;
-    top: 175px;
-	} 
-  @media screen and (min-width: $desktop) {
-    display: block;
+  } 
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     width: 200px;
-    left: 260px;
-    top: 320px;
+    left: 257px;
+    bottom: 143px;
 	} 
 }
 
 .many-ice_arrow {
   position: absolute;
   display: none;
-  left: 260px;
-  top: 430px;
+  left: 216px;
+  bottom: 32px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
     display: block;
-    left: 208px;
-    top: 290px;
 	} 
 
-  @media screen and (min-width: $desktop) {
-    left: 260px;
-    top: 430px;
+  @media screen and (min-width: 1200px) {
+    left: 257px;
+    bottom: 111px;
+  
 	} 
 }
-
-
 
