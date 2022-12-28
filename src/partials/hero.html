@@ -1,56 +1,65 @@
-<div class="container">
-    
-  <div class="sections">
-    <h1 class="hero-title">ice cream made with <span class="hero-title__span">passion</span> </h1>
-      <div class="hero-image">
+<section class="hero">
 
-        
-        <picture>
-          <source
-              srcset="./images/points_desktop.png 1x, 
-                      ./images/points_desktop2x.png 2x"
-              media="(min-width: 1200px)" />
-          <source
-              srcset="./images/points_tablet.png 1x, 
-                      ./images/points_tablet2x.png 2x"
-              media="(min-width: 768px)" />
-          <source
-              srcset="./images/points_mobile.png 1x, 
-                      ./images/points_mobile2x.png 2x"
-              media="(max-width: 767px)" />
-          <img 
-              class="hero-img_point" 
-              src="./images/points_mobile.png"
-              alt="points_foto">
-      </picture>
 
-      <picture>
-          <source
-              srcset="./images/ice-cream_desktop.png 1x, 
-                      ./images/ice-cream_desktop2x.png 2x"
-              media="(min-width: 1200px)" />
-          <source
-              srcset="./images/ice-cream_tablet.png 1x, 
-                      ./images/ice-cream_tablet2x.png 2x"
-              media="(min-width: 768px)" />
-          <source
-              srcset="./images/ice-cream_mobile.png 1x, 
-                      ./images/ice-cream_mobile2x.png 2x"
-              media="(max-width: 767px)" />
-          <img 
-              class="hero-img_ice" 
-              src="./images/ice-cream_mobile.png"
-              alt="ice-cream_foto">
-      </picture>
-
-      </div>
-
+  <div class="hero-container">
+  
+    <div class="hero-title_sections">
+      <h1 class="hero-title">ice cream made with <span class="hero-title__span">passion</span> </h1>
+    </div>
 
     <div class="about-product">
       <a class="about-products" href="#products">Products</a>
       <a class="about-product_made" href="#about">How it’s made?</a>
     </div>
 
+    
+    <picture class="hero__doots">
+        <source
+            srcset="./images/points_desktop.png 1x, 
+                    ./images/points_desktop2x.png 2x"
+            media="(min-width: 1200px)" />
+        <source
+            srcset="./images/points_tablet.png 1x, 
+                    ./images/points_tablet2x.png 2x"
+            media="(min-width: 768px)" />
+        <source
+            srcset="./images/points_480.png 1x, 
+                    ./images/points_4802x.png 2x"
+            media="(min-width: 480px)" />
+        <source
+            srcset="./images/points_mobile.png 1x, 
+                    ./images/points_mobile2x.png 2x"
+            media="(max-width: 479px)" />
+        <img 
+            class="hero-img_point" 
+            src="./images/points_mobile.png"
+            alt="points_foto">
+    </picture>
+
+    <picture class="hero__icecream">
+        <source
+            srcset="./images/ice-cream_desktop.png 1x, 
+                    ./images/ice-cream_desktop2x.png 2x"
+            media="(min-width: 1200px)"/>
+        <source
+            srcset="./images/ice-cream_tablet.png 1x, 
+                    ./images/ice-cream_tablet2x.png 2x"
+            media="(min-width: 768px)" />
+        <source
+            srcset="./images/ice-cream_480.png 1x, 
+                    ./images/ice-cream_4802x.png 2x"
+            media="(min-width: 480px)" />
+        <source
+            srcset="./images/ice-cream_mobile.png 1x, 
+                    ./images/ice-cream_mobile2x.png 2x"
+            media="(max-width: 479px)" />
+        <img 
+            class="hero-img_ice" 
+            src="./images/ice-cream_mobile.png"
+            alt="ice-cream_foto">
+    </picture>
+
+ 
     <div class="cafes_truck">
       <ul class="cafes_truck_list list">
         <li class="cafes_truck_item">
@@ -64,9 +73,10 @@
       </ul>
     </div>
 
+    
     <div class="many-ice">
 
-      <picture>
+      <picture class="many-ice_img">
         <source
             srcset="./images/many-ice-cream_desktop.png 1x, 
                     ./images/many-ice-cream_desktop2x.png 2x"
@@ -76,22 +86,19 @@
                     ./images/many-ice-cream_tablet2x.png 2x"
             media="(min-width: 768px)" />
         <img 
-            class="many-ice_img effects"
+            class="effects"
             src="./images/many-ice-cream_tablet.png"
             alt="many-ice-cream_foto">
-    </picture>
-
+      </picture>
 
       <p class="many-ice_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
       
-     
       <a class="arrow-link" href="#products">
         <img class="many-ice_arrow" src="./images/Arrow2.png" alt="arrow-foto">  
       </a>
 
-
-      
     </div>
-
+  
+    
   </div>
-</div>
+</section>
