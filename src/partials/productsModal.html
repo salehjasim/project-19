@@ -68,6 +68,7 @@
             name="name"
             class="form__item-input"
             placeholder="Name"
+            pattern="\w{0,16}"
           />
         </label>
         <label class="form__item">
@@ -76,6 +77,7 @@
             name="tel"
             class="form__item-input"
             placeholder="Phone"
+            pattern="\d{9,15}"
           />
         </label>
         <label class="form__item">
@@ -84,6 +86,7 @@
             class="form__item-textarea"
             rows="10"
             placeholder="Comment"
+            pattern="\d{0,300}"
           ></textarea>
         </label>
       </div>
