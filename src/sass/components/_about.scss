@@ -1,0 +1,220 @@
+.about {
+    background: $primaryColor;
+    @media screen and(min-width: $tablet) {
+        position: relative;
+    }
+}
+.about-slogan{
+    padding-top: 61px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    @media screen and(min-width: $tablet) {
+        font-weight: 800;
+        font-size: 22px;    
+    }
+    @media screen and(min-width: $desktop) {
+        font-size: 30px;    
+    }
+}
+
+.about-title{
+    margin-top: 12px;
+    margin-bottom: 22px;
+    padding: 0 55px;
+    font-family: 'Seymour One';
+font-weight: 400;
+font-size: 30px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: $white;
+@media screen and(min-width: $tablet) {
+    font-size: 34px;  
+    margin-bottom: 80px;  
+    padding: 0;
+}
+@media screen and(min-width: $desktop) {
+    font-size: 36px;    
+    margin-bottom: 172px; 
+}
+}
+.about-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    @media screen and(min-width: $tablet) {
+        width: 330px;
+        position: absolute;
+        top: 214; 
+          
+    }
+    @media screen and(min-width:$desktop) {
+
+        width: 491px;
+        top: 236;
+    }
+}
+.thumb{
+    @media screen and(min-width: $tablet) {
+      margin-left: 391px;
+         
+    }
+    @media screen and(min-width:$desktop) {
+        margin-left: 584px;
+        margin-right: 105px;
+    }
+
+}
+.about-title__text{
+    margin: 22px 50px;
+font-weight: 400;
+font-size: 12px;
+line-height: 2.1;
+text-align: center;
+letter-spacing: 0.04em;
+color: $white;
+
+@media screen and(min-width: $tablet) {
+   margin: 0;
+   margin-bottom: 8px;
+   line-height: 1.7;
+   text-align: left;
+}
+@media screen and(min-width: $desktop) {
+    font-size: 16px;
+ }
+}
+
+
+.text-hidden{
+    display: none;
+    @media screen and(min-width: $tablet) {
+        display: block;
+        margin: 0;
+        text-align: left;
+     }
+}
+
+.about-button{
+    display: block;
+    margin: 0 auto 0 auto;
+    padding: 12px 35px 12px 34px;
+    background-color: $secondaryYellow;
+    border: none;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    position: relative;
+    &:focus {
+        background-color: $hoverColor;
+        color: $white;
+        outline: none;
+        transition: $transition; }
+        &:focus .arrow-icon{
+            fill: $white;
+        }
+    &:hover {
+        background-color: $hoverColor;
+        transition: $transition;
+        opacity: 0.9;
+        cursor: pointer; } 
+        @media screen and(min-width: $tablet) {
+            margin: 24px 0 80px 0;
+               
+          }
+          @media screen and(min-width: $desktop) {
+            margin: 46px 0 146px 0;
+               
+          }
+}
+
+.about-list{
+    @media screen and(min-width: $tablet) {
+        display: flex;
+        margin-left: 44px;
+        margin-right: 44px;
+      }
+}
+.about-list__item:not(:last-child){
+    @media screen and(min-width: $tablet) {
+        margin-right: 80px;
+      }
+    
+}
+
+.about-list__item:last-child{
+    padding-bottom: 61px;
+    @media screen and(min-width: $tablet) {
+        padding-bottom: 204px;
+           
+      }
+      @media screen and(min-width: $desktop) {
+        padding-bottom: 178px;
+           
+      }
+  
+}
+.about-list__icon{
+    background-color: $secondaryYellow;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 22px auto;
+    @media screen and(min-width: $tablet) {
+       margin-bottom: 32px;
+      }
+      @media screen and(min-width: $desktop) {
+        margin-bottom: 40px;
+           
+      }
+  
+    
+}
+.about-icon{
+    width: 36px;
+    height: 36px;
+ 
+}
+.about-list__text{
+    margin: 22px auto;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: $white;
+@media screen and(min-width: $desktop) {
+    
+    font-size: 58px;
+  }
+
+}
+.about-list__desc{
+font-weight: 700;
+font-size: 12px;
+line-height: 1.7;
+text-align: center;
+color: $white;
+@media screen and(min-width: $tablet) {
+    font-weight: 400;
+    font-size: 14px;
+  
+       
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}

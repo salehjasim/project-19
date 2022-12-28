@@ -1,7 +1,8 @@
-.is-hidden {
+.location-is-hidden {
   visibility: hidden;
 }
 .location-backdrop {
+  z-index: 999;
   position: fixed;
   top: 0;
   left: 0;
@@ -18,8 +19,6 @@
   background-color: $white;
   border: solid 2px $secondaryYellow;
   border-radius: 10px;
-  width: 224px;
-  height: 365px;
   width: 280px;
   height: 365px;
   @media screen and (min-width: $tablet) {

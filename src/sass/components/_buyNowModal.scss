@@ -1,0 +1,377 @@
+.buyNow-is-hidden{
+  visibility: hidden;
+}
+
+.buyNow-backdrop {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+}
+.buyNow-modal {
+  overflow-y: auto;
+  box-sizing: border-box;
+  position: absolute;
+  text-align: center;
+  padding-bottom: 32px;
+  width: 280px;
+  height: 95%;
+  left: calc(50% - 140px);
+  top: 20px;
+  background: $white;
+  border: 2px solid $secondaryYellow;
+  border-radius: 10px;
+
+  @media screen and (min-width: $tablet) {
+    width: 568px;
+    left: calc(50% - 284px);
+    top: 15px;
+    padding: 32px 54px;
+  }
+}
+  
+.buyNow__heading {
+  margin-top: 32px;
+  margin-bottom: 40px;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.background-ice-cream{
+  position: absolute;
+  z-index: -1;
+  top: 28%;
+  left: 31px;
+}
+.background-ice-coffee{
+  position: absolute;
+  z-index: -1;
+  left: 35%;
+  top: 28%;
+}
+.background-milkshake{
+  position: absolute;
+  z-index: -1;
+  left: 64%;
+  top: 28%;
+}
+.buyNow__icon-ice-cream{
+  position: absolute;
+  z-index: -1;
+  top: 40%;
+  left: 26%;
+  border: 2px solid #96AF8C;
+filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+border-radius: 15px;
+  }
+  .buyNow__icon-ice-coffee{
+    position: absolute;
+    z-index: -2;
+    top: 92%;
+    left: 26%;
+    background: #EFD478;
+border: 2px solid #EFD478;
+box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+border-radius: 15px;
+  }
+  .buyNow__icon-milkshake{
+    position: absolute;
+    z-index: -1;
+    top: 146%;
+    left: 26%;
+    border: 2px solid #D6936D;
+filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+border-radius: 15.7808px;
+  }
+
+// @media screen and (max-width: $mobile) {
+//   .buyNow__icon-ice-cream{
+//     position: absolute;
+//     z-index: -1;
+//     top: 41%;
+//     left: 26%;
+//     }
+//     .buyNow__icon-ice-coffee{
+//       position: absolute;
+//       z-index: -1;
+//       top: 93%;
+//       left: 26%;
+ 
+//     }
+//     .buyNow__icon-milkshake{
+//       position: absolute;
+//       z-index: -1;
+//       top: 146%;
+//       left: 26%;
+  
+//     }
+// }
+@media screen and (min-width: $tablet) {
+  .background-ice-cream{
+    position: absolute;
+    z-index: -1;
+    top: 34%;
+    left: 31px;
+  }
+  .background-ice-coffee{
+    position: absolute;
+    z-index: -1;
+    left: 35%;
+    top: 34%;
+  }
+  .background-milkshake{
+    position: absolute;
+    z-index: -1;
+    left: 64%;
+    top: 34%;
+  }
+  .buyNow__icon-ice-cream{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 9%;
+    }
+    .buyNow__icon-ice-coffee{
+      position: absolute;
+      z-index: -2;
+      top: 50%;
+      left: 38%;
+ 
+    }
+    .buyNow__icon-milkshake{
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 380px;
+  
+    }
+}
+@media screen and (min-width: $desktop){
+  .background-ice-cream{
+    position: absolute;
+    z-index: -1;
+    top: 28%;
+    left: 31px;
+  }
+  .background-ice-coffee{
+    position: absolute;
+    z-index: -1;
+    left: 35%;
+    top: 28%;
+  }
+  .background-milkshake{
+    position: absolute;
+    z-index: -1;
+    left: 64%;
+    top: 28%;
+  }
+.buyNow__icon-ice-cream{
+  position: absolute;
+  z-index: -1;
+  top: 40%;
+  left: 9%;
+  }
+  .buyNow__icon-ice-coffee{
+    position: absolute;
+    z-index: -2;
+    top: 40%;
+    left: 38%;
+    background: #EFD478;
+  }
+  .buyNow__icon-milkshake{
+    position: absolute;
+    z-index: -1;
+    top: 40%;
+    left: 380px;
+  }}
+
+.buyNow-products{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 63px;
+  &__text{
+    margin-top: 19px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    left: 13px;
+  }
+  @media screen and (max-width: calc($tablet - 1px)) {
+    margin-bottom: 31px;
+  }
+  @media screen and (min-width: $tablet) {
+    gap: 32px;
+    flex-wrap: nowrap;
+  }
+}
+
+.buyNow-products__text--ice{
+  width: 106px;
+}
+.modal-form{
+  justify-content: center;
+}
+
+.form-imput {
+  box-sizing: border-box;
+  padding: 0;
+  padding-left: 16px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid $primaryColor;
+  border-radius: 4px;
+  outline-style: none;
+  background-color: rgba(248, 210, 78, 0.1);
+  
+}
+.form-imput::placeholder{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: $black;
+}
+
+.area {
+  width: 368px;
+  height: 84px;
+  padding-left: 16px;
+  padding-top: 10px;
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px;
+}
+.area::placeholder {
+  margin-left: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: $black;
+}
+
+
+.form-label {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+
+}
+
+.submit-button {
+  margin-top: 22px;
+  width: 121px;
+  height: 42px;
+  left: 224px;
+  top: 570px;
+  background: $secondaryYellow;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  align-items: center;
+  text-align: center;
+  color: $black;
+  cursor: pointer;
+}
+.ice-cream {
+  display: block;
+  position: relative;
+  width: 132px;
+  height: 136px;
+  border-radius: 15px;
+  border: 2px solid #96AF8C;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  &:has(> .buyNow-checkbox:checked) {
+    background-color: #84A178;
+  }
+  @media screen and (max-width: calc($tablet - 1px)) {
+    margin-bottom: 63px;
+  }
+}
+.ice-coffee {
+  display: block;
+  position: relative;
+  width: 132px;
+  height: 136px;
+  border-radius: 15px;
+  border: 2px solid #EFD478;
+  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+  border-radius: 15px;
+  &:has(> .buyNow-checkbox:checked) {
+    background-color: #EFD478;
+  }
+  @media screen and (max-width: calc($tablet - 1px)) {
+    margin-bottom: 63px;
+  }
+}
+.milkshake {
+  display: block;
+  position: relative;
+
+  width: 132px;
+  height: 136px;
+  border-radius: 15px;
+  border: 2px solid #D6936D;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  border-radius: 15.7808px;
+  &:has(> .buyNow-checkbox:checked) {
+    background-color: #D6936D;
+  }
+  @media screen and (max-width: calc($tablet - 1px)) {
+    margin-bottom: 0px;
+  }
+}
+.buyNow-img {
+  position: absolute;
+  top: -66px;
+  left: -22px;
+}
+.buyNow-label {
+  cursor: pointer;
+}
+.buyNow-checkbox {
+  position: relative;
+  z-index: -200;
+  opacity: 0.1;
+  width: 132px;
+  height: 136px;
+  display: none;
+  &:checked + .ice-coffee {
+    background-color: #84A178;
+
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.checkbox-thumb {
+  position: relative;
+  z-index: -200;
+  opacity: 0.1;
+  width: 132px;
+  height: 136px;
+}

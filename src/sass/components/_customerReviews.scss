@@ -2,8 +2,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  //   padding-top: 178px;
-  padding-bottom: 393px;
+  // padding-top: 178px;
+  padding-bottom: 361px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 235px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 130px;
+  }
   /*phone*/
   background-image: url(../images/customer/img3-mobile@1x.webp);
   @media screen and (min-device-pixel-ratio: 2),
@@ -32,18 +38,32 @@
 }
 .review__image {
   display: block;
-  transform: translateY(-32px);
-}
-.swiper {
-  margin-top: 80px;
-}
-.swiper__img {
-  width: 85px;
-  height: 85px;
-  border-radius: 50%;
-  background-image: url('../images/customer/img1-desk@2x.webp');
-  background-position: center;
   margin: 0 auto;
+  max-width: 100%;
+  border-radius: 8px;
+  @media screen and (min-width: $tablet){
+    border-radius: 18px;
+    
+  }
+   @media screen and (min-width: $desktop){
+    border-radius: 24px;
+}
+}
+
+.swiper__img {
+  margin-bottom: 32px;
+}
+.swiper__image {
+  display: block;
+  margin: 80px auto 32px;
+  border-radius: 50%;
+   @media screen and (min-width: $tablet){
+    margin: 100px auto 32px;
+    
+  }
+   @media screen and (min-width: $desktop){
+    margin: 140px auto 32px;
+}
 }
 .swiper__comment {
   padding: 35px 39px;
@@ -53,17 +73,82 @@
   background-color: $primaryColor;
   border-radius: 10px;
   color: $white;
-  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    padding: 29px 80px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 968px;
+    margin: 0 auto;
+    padding: 43px 109px;
+    font-size: 16px;
+  }
 }
 .review__name {
   text-align: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 186%;
+  margin-top: 32px;
+  padding-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    padding-bottom: 32px;
+  }
 }
 .swiper-pagination {
   bottom: 0;
 }
 .swiper-pagination .review__pagination {
   margin-top: 12px;
+}
+.swiper-wrapper {
+  margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32;
+  }
+}
+.swiper-pagination-bullet {
+  margin-left: 18px;
+  height: 12px;
+  width: 12px;
+  background-color: $primaryColor;
+  &:first-child {
+    margin-left: 0px;
+  }
+}
+.container-picture {
+  overflow: visible;
+  margin-bottom: 80px;
+}
+.review__image-adaptive {
+  @media screen and (max-width: 767px) {
+    max-width: 100%;
+    height: 130px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 100%;
+    height: 327px;
+  }
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: -4px;
+   @media screen and (min-width: $tablet) {
+    padding-bottom: 32px;
+    bottom: -16px;
+  }
+}
+
+.swiper-container {
+  transform: translateY(-32px);
+  @media screen and (min-width: $tablet){
+    transform: translateY(-144px);
+}
+@media screen and (min-width: $desktop){
+    transform: translateY(-98px);
+}
 }

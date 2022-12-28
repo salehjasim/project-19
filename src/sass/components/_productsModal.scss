@@ -1,0 +1,248 @@
+.products-is-hidden {
+  visibility: hidden;
+}
+.products-backdrop {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal-products {
+  width: 280px;
+  height: 95%;
+  padding: 28px 20px;
+  background: $white;
+  border: 2px solid $secondaryYellow;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 140px);
+  overflow-y: auto;
+
+  @media screen and (min-width: $tablet) {
+    width: 568px;
+    padding: 32px 40px;
+    left: calc(50% - 284px);
+  }
+}
+
+.modal-products__close {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+}
+
+.modal-products__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(28 / 20);
+  text-align: center;
+  margin-bottom: 20px;
+  color: $black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-icecream-png {
+  display: flex;
+  margin: auto;
+}
+
+.modal-products__table {
+  justify-content: center;
+  display: flex;
+  gap: 9px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 20px;
+  }
+}
+
+.modal-products__block {
+  width: 53px;
+  height: 72px;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (min-width: $tablet) {
+    width: 65px;
+    height: 90px;
+  }
+}
+
+.modal-products__table-weight {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: calc(28 / 10);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $black;
+  width: 44px;
+  height: 44px;
+  background: #9cbe8f;
+  border-radius: 50%;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  justify-content: center;
+  margin-bottom: 8px;
+  position: relative;
+  bottom: 1px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: calc(28 / 12);
+    width: 53px;
+    height: 53px;
+  }
+}
+
+.modal-products__table-class {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: calc(12 / 10);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $black;
+  justify-content: center;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: calc(15 / 12);
+  }
+}
+
+.modal-products__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(28 / 20);
+  text-align: center;
+  color: $black;
+  margin-bottom: 24px;
+}
+
+.modal-products__ingredients {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.modal-products__item {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $black;
+}
+
+.modal-products__item:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.modal-products__item-weight {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.04em;
+  color: $black;
+}
+
+.modal-products__weight {
+  margin-left: auto;
+}
+
+.modal-products__item-weight:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+//-------- form-----------
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $tablet) {
+    align-items: center;
+  }
+}
+.form__item-input {
+  padding: 8px 12px;
+  border: 1px solid $primaryColor;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  width: 224px;
+  outline: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  background-color: #f8d24e1a;
+  color: $black;
+  @media screen and (min-width: $tablet) {
+    width: 368px;
+    margin-bottom: 16px;
+  }
+}
+.form__item-textarea {
+  padding: 8px 12px;
+  border: 1px solid $primaryColor;
+  border-radius: 10px;
+  height: 64px;
+  width: 224px;
+  margin-bottom: 24px;
+  outline: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  background-color: #f8d24e1a;
+  @media screen and (min-width: $tablet) {
+    width: 368px;
+    margin-bottom: 32px;
+  }
+}
+.form__submit {
+  border: none;
+  padding: 12px 34px;
+  background-color: $secondaryYellow;
+  color: $black;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  cursor: pointer;
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+  }
+}

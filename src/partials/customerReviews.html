@@ -1,6 +1,6 @@
 <section class="review" data-slider="review-slider">
-  <div class="container">
-    <picture>
+  <div class="container swiper-container">
+    <!-- <picture>
       <source
         media="(min-width: 1200px )"
         srcset="
@@ -18,7 +18,7 @@
         type="image/webp"
       />
       <source
-        media="(min-width: 320px)"
+        media="(max-width: 767px)"
         srcset="
           ./images/customer/img1-mobile@1x.webp 1x,
           ./images/customer/img1-mobile@2x.webp 2x
@@ -30,11 +30,76 @@
         class="review__image"
         alt="Продукт Морозиво"
       />
-    </picture>
+    </picture> -->
     <div class="swiper review__slider">
       <div class="swiper-wrapper">
         <div class="swiper-slide review__item">
-          <div class="swiper__img"></div>
+          <div class="container-picture">
+            <picture>
+              <source
+                media="(min-width: 1200px )"
+                srcset="
+                  ./images/customer/img1-desk@1x.webp 1x,
+                  ./images/customer/img1-desk@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/customer/img1-tablet@1x.webp 1x,
+                  ./images/customer/img1-tablet@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/customer/img1-mobile@1x.webp 1x,
+                  ./images/customer/img1-mobile@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                src="./images/customer/img1-desk@1x.webp"
+                class="review__image"
+                alt="Продукт Морозиво"
+              />
+            </picture>
+          </div>
+          <div class="swiper__img">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/customer/img2-desktop@1x.webp 1x,
+                  ./images/customer/img2-desktop@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/customer/img2-tablet@1x.webp 1x,
+                  ./images/customer/img2-tablet@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/customer/img2-mobile@1x.webp 1x,
+                  ./images/customer/img2-mobile@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                src="./images/customer/img2-desktop@1x.jpg"
+                class="swiper__image"
+                alt=""
+              />
+            </picture>
+          </div>
           <div class="swiper__comment">
             <p class="swiper__text">
               I love visiting your cafe. You prepare the most delicious ice
@@ -45,22 +110,140 @@
           <h3 class="review__name">Emily, Los Angeles</h3>
         </div>
         <div class="swiper-slide review__item">
-          <div class="swiper__img"></div>
+          <div class="container-picture">
+            <picture>
+              <source
+                media="(min-width: 320px )"
+                srcset="
+                  ./images/customer/img6@1x.webp 1x,
+                  ./images/customer/img6@2x.webp 2x
+                "
+                type="image/webp"
+              />
+
+              <!-- <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/customer/img1-tablet@1x.webp 1x,
+                ./images/customer/img1-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/customer/img1-mobile@1x.webp 1x,
+                ./images/customer/img1-mobile@2x.webp 2x
+              "
+              type="image/webp"
+            /> -->
+              <img
+                src="./images/customer/img1-desk@1x.webp"
+                class="review__image review__image-adaptive"
+                alt="Продукт Морозиво"
+              />
+            </picture>
+          </div>
+          <div class="swiper__img">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/customer/img4@1x.webp 1x,
+                  ./images/customer/img4@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/customer/img4@1x.webp 1x,
+                  ./images/customer/img4@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                src="./images/customer/img2-desktop@1x.jpg"
+                class="swiper__image"
+                alt=""
+              />
+            </picture>
+          </div>
           <div class="swiper__comment">
             <p class="swiper__text">
-              I love visiting your cafe. You prepare the most delicious ice
-              cream in Los Angeles! In addition, you have beautiful serving,
-              cozy atmosphere and polite staff.
+              Every day we come to you with friends after classes in college. We
+              love your ice cream and casual atmosphere!
             </p>
           </div>
-          <h3 class="review__name">Emily, Los Angeles</h3>
+          <h3 class="review__name">Bryan, New-York</h3>
         </div>
         <div class="swiper-slide review__item">
-          <div class="swiper__img"></div>
-          <div class="swiper__comment">
-            <p class="swiper__text">Ne pon</p>
+          <div class="container-picture">
+            <picture>
+              <source
+                media="(min-width: 320px )"
+                srcset="
+                  ./images/customer/img7@1x.webp 1x,
+                  ./images/customer/img7@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/customer/img1-tablet@1x.webp 1x,
+                ./images/customer/img1-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/customer/img1-mobile@1x.webp 1x,
+                ./images/customer/img1-mobile@2x.webp 2x
+              "
+              type="image/webp"
+            /> -->
+              <img
+                src="./images/customer/img1-desk@1x.webp"
+                class="review__image review__image-adaptive"
+                alt="Продукт Морозиво"
+              />
+            </picture>
           </div>
-          <h3 class="review__name">Emily, Los Angeles</h3>
+          <div class="swiper__img">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/customer/img5@1x.webp 1x,
+                  ./images/customer/img5@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/customer/img5@1x.webp 1x,
+                  ./images/customer/img5@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                src="./images/customer/img2-desktop@1x.jpg"
+                class="swiper__image"
+                alt=""
+              />
+            </picture>
+          </div>
+          <div class="swiper__comment">
+            <p class="swiper__text">
+              Ice cream is my passion! I love your chocolate hazelnut ice cream!
+              And I really like the excellent service - always served politely
+              and quickly!
+            </p>
+          </div>
+          <h3 class="review__name">Diana, Chicago</h3>
         </div>
       </div>
       <div class="swiper-pagination review__pagination"></div>

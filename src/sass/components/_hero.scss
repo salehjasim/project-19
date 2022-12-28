@@ -13,7 +13,9 @@
 
   @media screen and (min-width: 480px) {
     width: 480px;
+
   }
+
 
   @media screen and (min-width: 768px) {
 		width: 768px;
@@ -80,9 +82,11 @@
 
 .hero__icecream {
   position: absolute;
+
   width: 177px;
   bottom: -3px;
   left: 83px;
+
 
   @media screen and (min-width: 480px) {
     bottom: -3px;
@@ -102,8 +106,10 @@
 
 .hero__doots {
   position: absolute;
+
   width: 320px;
   bottom: 0;
+
 
   @media screen and (min-width: 480px) {
     right: 0px;
@@ -200,7 +206,9 @@
   top: 8px;
   right: 32px;
 
+
   @media screen and (max-width: 767.9px) {
+
     display: none;
 	}
   @media screen and (min-width: 1200px) {
